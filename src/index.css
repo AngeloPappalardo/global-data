@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Data Dashboard Design System
+All colors MUST be HSL. Focus on data visualization and professional appearance.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 210 95% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 95% 65%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 95% 45%;
+
+    --radius: 0.75rem;
+
+    /* Data visualization colors */
+    --chart-1: 210 95% 45%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 0 84% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 95% 45%), hsl(210 95% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 56%));
+    --gradient-bg: linear-gradient(135deg, hsl(0 0% 98%), hsl(210 20% 96%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 25px -6px hsl(210 95% 45% / 0.1);
+    --shadow-chart: 0 8px 32px -8px hsl(210 95% 45% / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 95% 55%;
+    --primary-foreground: 222 47% 11%;
+    --primary-glow: 210 95% 75%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 142 76% 46%;
+    --accent-foreground: 222 47% 11%;
+
+    --success: 142 76% 46%;
+    --success-foreground: 222 47% 11%;
+
+    --warning: 38 92% 60%;
+    --warning-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 222 47% 11%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 210 95% 55%;
+
+    /* Dark mode data visualization colors */
+    --chart-1: 210 95% 55%;
+    --chart-2: 142 76% 46%;
+    --chart-3: 38 92% 60%;
+    --chart-4: 280 65% 70%;
+    --chart-5: 0 84% 70%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 95% 55%), hsl(210 95% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 46%), hsl(142 76% 66%));
+    --gradient-bg: linear-gradient(135deg, hsl(222 47% 11%), hsl(217 32% 17%));
+
+    /* Dark mode shadows */
+    --shadow-card: 0 4px 25px -6px hsl(210 95% 55% / 0.2);
+    --shadow-chart: 0 8px 32px -8px hsl(210 95% 55% / 0.25);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
